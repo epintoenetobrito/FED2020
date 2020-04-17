@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    background-color: #E6E6E9;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 2em;
+    color: #000;
+}
+
+h1{
+    font-size: 2em;
+    color: #092869;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 1.8em;
+    font-weight: 100;
+    padding-bottom: 0.2em;
+    color: #092869;
+}
+
+
+a {
+    color: #092869;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    color: #fff;
+    background-color: #f8ca49;
+}
+
+nav{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    z-index: 1;
+}
+
+#ulnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#containerheader {
+    position: relative;
+}
+
+#NSheader{
+    width: 100%;
+}
+
+#tekstblok {
+    position: absolute;
+    background-color: #092869;
+    padding: 1em;
+    opacity: 80%;
+    color: #fff;
+    top: 15%;
+}
+
+#tekstblok h1 {
+    color: #fff;
+}
+
+body>header ul li a {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*FILTER*/
+
+.filter{
+    background-color: #f8ca49;
+    padding: 1em;
+}
+
+.containerfilter{
+    width: 95%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.filter > h1{
+    font-weight: 100;
+   padding-left: 0.34em;
+}
+
+.containerfilter > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown{
+    position: relative;
+
+}
+
+.dropdown a {
+    text-decoration: none;
+    padding: 0.5em;
+
+    }
+
+.dropdown [data-toggle="dropdown"] {
+    display: block;
+    background-color: #fff;
+    color: #092869;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 2em;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+     border-bottom-color: #f8ca49;
+}
+
+.dropdown [data-toggle="dropdown"]:before {
+    position: absolute;
+    display: block;
+    font-size: 0.8em;
+    color: #092869;
+    top: 1em;
+    right: 0;
+}
+
+.dropdown > .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown > .dropdown-menu li {
+    padding: 0;
+
+}
+
+.dropdown > .dropdown-menu li a {
+    display: block;
+}
+.dropdown > input[type="checkbox"] {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ .dropdown-menu {
+    max-height: 20em;
+    display: block;
+
+}
+
+input[type="checkbox"]{
+    height: 30px;
+    width: 30px;
+}
+
+/* SORTEER */
+
+.sorteer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #fff;
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: #0079d3;
+    padding: 0.4em;
+}
+
+select {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+    text-align: center;
+    font-weight: 100;
+    width: 40%;
+}
+
+body> .sorteer h2 {
+    font-weight: 200;
+}
+
+/*ARTIKELEN*/
+
+main{
+    margin: 0.5em;
+    justify-content: center;
+
+}
+
+article{
+    margin: 2em;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    flex-basis: 20em;
+
+}
+
+.maintekst{
+    padding: 1em;
+}
+
+#hart, #hartTwee, #hartDrie, #hartVier, #hartVijf, #hartZes{
+position: relative;
+    width: 8%;
+    margin: 1em;
+    float: right;
+}
+
+/*KNOP*/
+.lees {
+    margin-top: 1em;
+    color: #0079d3;
+    font-size: 1em;
+    font-weight: 300;
+    border-color: #fff;
+}
+
+.knop{
+    background-color: #0079d3;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #005CA0;
+    color: #fff;
+    padding: 0.4em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.knop:hover{
+    background-color: #005ca0;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #0079d3;
+    color: #fff;
+    padding: 0.4em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+body>footer {
+    border-top-style: solid;
+    border-top-color: #ccc;
+}
+
+body > footer ul li {
+    display: inline;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+body>footer a{
+    color: #092869;
+    text-decoration: none;
+}
+
+
+/* INLOG / AANMELD */
+
+.inlog{
+    padding: 2em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: #fff;
+}
+
+.inlog h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+form {
+    max-width: 100%;
+    margin: auto;
+    background-color: #f8ca49;
+    padding: 2em;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 0.3em 0;
+    color: #092869;
+}
+
+label{
+    color: #000;
+    display: block;
+    padding: 0.5em 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+    background-color: #fff;
+    color: #484848;
+    font-size: 0.8em;
+    padding: 1em;
+    width: 100%;
+}
+
+input:placeholder-shown{
+    background-color: #fff;
+}
+
+input:valid{
+    background: url(check2.png) no-repeat;
+    background-size: 15px;
+    background-position: right;
+    background-color: #fff;
+}
+
+
+.voordelen {
+  list-style: none;
+}
+
+.voordelen li{
+    font-size: 1.2em;
+    padding-bottom: 1.2em;
+
+}
+
+.aanmeldlink{
+    font-size: 1.2em;
+    padding: 1.em;
+    color: #0079d3;
+}
+
+.voordeel{
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.aanvraag h1{
+    margin-top: 4em;
+    font-size: 1.5em;
+    }
+
+#aanmeld {
+    padding: 2em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: #fff;
+    width: 100%;
+}
+
+#aanmeld h1{
+    margin-top: 4em;
+    font-size: 1.5em;
+    }
+
+fieldset {
+    border: none;
+}
+
+
+#info
+{
+    border-style: solid;
+    border-color: #ccc;
+    border-width: thin;
+    color: #484848;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+
+#password
+{
+    border-style: solid;
+    border-color: #ccc;
+    border-width: thin;
+    color: #484848;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media  (min-width: 48em) {
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tekstblok {
+    position: absolute;
+    background-color: #092869;
+    padding: 2em;
+    opacity: 80%;
+    color: #fff;
+    top: 20%;
+}
+
+
+.knop{
+    width: 100%;
+}
+
+.knop:hover{
+    max-width: 100%;
+}
+
+
+.inlog{
+     display: flex;
+    flex-wrap: wrap;
+     justify-content:space-around;
+    }
+
+}
+
+
+
+
+
+
+/* DESKTOP*/
+
+ @media  (min-width: 70em) {
+
+main{
+    width: 90%;
+    margin: auto;
+        }
+
+.dropdown {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    line-height: 1.3em;
+    position: relative;
+    list-style: none;
+    font-size: 1em;
+}
+
+
+.dropdown-menu{
+    display:inline;
+}
+
+#tekstblok {
+    position: absolute;
+    background-color: #092869;
+    padding: 2em;
+    opacity: 80%;
+    color: #fff;
+    top: 30%;
+}
+
+#tekstblok h1 {
+    font-size: 3em;
+    padding-bottom:0.5em;
+}
+
+.filter{
+    background-color: #f8ca49;
+    padding: 1em;
+}
+
+.filter h1{
+    padding-left: 1.5em;
+}
+
+     .knop{
+         width: 50%;
+     }
+
+    .knop:hover{
+    max-width: 50%;
+}
+}

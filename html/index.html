@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+ <html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+          <link rel="stylesheet" href="css/stylesheet1.css">
+        <title>Overzicht - Elma Pinto e Neto Brito</title>
+    </head>
+       <body>
+        <!-- HEADER MET NAVIGATIE EN AFBEELDING -->
+        <!--NAVIGATIE-->
+        <header>
+             <nav>
+                <ul id="ulnav">
+                    <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Mijn NS</a></li>
+                </ul>
+            </nav>
+        <!--AFBEELDING MET TEKST-->
+            <div id="containerHeader">
+                <img id="NSheader"src="img/header_NS2.jpg">
+                    <div id="tekstblok">
+                        <h1>Een reis, 99 verhalen.</h1>
+                            <p>Verhalen voor en door de reizigers.</p>
+                    </div>
+            </div>
+        </header>
+        <!--FILTER -->
+        <form class="filter">
+          <h1>Filter je verhalen</h1>
+            <div class="containerfilter">
+                <!--DROPDOWNS-->
+                <ul>
+                    <!--DROPDOWN THEMA-->
+                    <li class="dropdown">
+                        <input type="checkbox" class="titel"/>
+
+                            <a href="#" data-toggle="dropdown">Thema</a>
+                                <ul class="dropdown-menu">
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Fictie</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Non-Fictie</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Drama</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Liefde</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Humor</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Avontuur</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Impersonatie</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Thriller</li></label>
+                                </ul>
+                    </li>
+                    <!--DROPDOWN LEESDUUR-->
+                    <li class="dropdown">
+                        <input type="checkbox" class="titel"/>
+                            <a href="#" data-toggle="dropdown">Leesduur</a>
+                                <ul class="dropdown-menu">
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Kort</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Gemiddeld</li></label>
+                                    <label><li class="keuze-item"><input type="checkbox" name="Fictie">Lang</li></label>
+                                </ul>
+                    </li>
+                    <!--DROPDOWN BEOORDELING-->
+                    <li class="dropdown">
+                        <input type="checkbox" class="titel"/>
+                        <a href="#" data-toggle="dropdown">Beoordeling</a>
+                                <ul class="dropdown-menu">
+                                    <label><li class="keuze-item"><input type="radio" value="1">1 sterren</li></label>
+                                    <label><li class="keuze-item"><input type="radio" value="2">2 sterren</li></label>
+                                    <label><li class="keuze-item"><input type="radio" value="3">3 sterren</li></label>
+                                    <label><li class="keuze-item"><input type="radio" value="4">4 sterren</li></label>
+                                    <label><li class="keuze-item"><input type="radio" value="5">5 sterren</li></label>
+                                </ul>
+                    </li>
+                </ul>
+                <!--ZOEKKNOP-->
+                <button type="submit" class="knop">Zoeken</button>
+            </div>
+        </form>
+        <!--SORTEERFUNCTIE-->
+        <section class="sorteer">
+               <select>
+                  <option value="Titel A - Z">Titel A - Z</option>
+                  <option value="Titel Z - A">Titel Z - A</option>
+                  <option value="Beoordeling Hoog - Laag">Beoordeling Laag - Hoog</option>
+                  <option value="Beoordeling Laag - Hoog">Beoordeling Hoog - Laag</option>
+                  <option value="Verschijningsdatum">Verschijningsdatum</option>
+                </select>
+                <p>100 resultaten</p>
+        </section>
+        <!--ALLE ARTIKELEN-->
+         <main>
+             <!--ARTIKEL-->
+             <article>
+                <img src="IMG/parijs.jpg">
+                    <img id="hart" onclick="changeImage()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Steenkolenfrans</h2>
+                            <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. </p>
+                        <button type="submit" class="lees" value="Submit">Lees verder</button>
+                     </div>
+            </article>
+            <!--ARTIKEL-->
+            <article>
+                <img src="IMG/kat.jpg">
+                    <img id="hartTwee" onclick="changeImage2()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Vrijdag de 13e</h2>
+                            <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit. Terwijl ik naar buiten loop zie ik...</p>
+                        <button type="submit" class="lees" value="Submit">Lees verder</button>
+                     </div>
+            </article>
+            <!--ARTIKEL-->
+            <article>
+                <img src="IMG/alzheimer.jpg">
+                    <img id="hartDrie" onclick="changeImage3()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Alzheimer</h2>
+                            <p>Ik stap uit, euh… Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw. Kom. Lijn 12. Of was het 21...</p>
+                        <button type="submit" class="lees" value="Submit"><a href="alzheimer.html">Lees verder</a></button>
+                     </div>
+            </article>
+            <!--ARTIKEL-->
+            <article>
+                <img src="IMG/telegrafisch.jpg">
+                    <img id="hartVier" onclick="changeImage4()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Telegrafisch</h2>
+                            <p>BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN BUS STOPT STOP NAAR BIBLIOTHEEK</p>
+                    <button type="submit" class="lees" value="Submit"><a href="telegrafisch.html">Lees verder</a></button>
+                     </div>
+             </article>
+             <!--ARTIKEL-->
+             <article>
+                <img src="IMG/verrasing.jpg">
+                    <img id="hartVijf" onclick="changeImage5()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Verrassing</h2>
+                            <p>- ‘Biertje dan maar?’
+                                – ‘Graag.’
+                                – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’
+                                – ‘Gaat daar een bus naartoe?’</p>
+                        <button type="submit" class="lees" value="Submit">Lees verder</button>
+                    </div>
+            </article>
+             <!--ARTIKEL-->
+             <article>
+                <img src="IMG/zombie.jpg">
+                    <img id="hartZes" onclick="changeImage6()" src="img/icon-like-leeg.png">
+                    <div class="maintekst">
+                        <h2>Zombie</h2>
+                            <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers...</p>
+                        <button type="submit" class="lees" value="Submit"><a href="zombie.html">Lees verder</a></button>
+                    </div>
+            </article>
+         </main>
+         <!--FOOTER-->
+         <footer>
+            <ul>
+                <li><a href="#"> Gebruiksvoorwaarden</a></li>
+                <li><a href="#">Privacybeleid</a></li>               <li><a href="#">Ondersteuning</a></li>
+                </ul>
+        </footer>
+        <!--JAVASCRIPT-->
+        <script src="js/validation.js" type="text/javascript"></script>
+</body>
+</html>

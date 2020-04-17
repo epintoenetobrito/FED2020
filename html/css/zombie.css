@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 75%;
+  margin: auto ;
+  background-color: #E6E6E9;
+  background:url(zombie_mob.png) no-repeat;
+background-size: cover;
+    height: 160em;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  color: #092869;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: auto 0;
+  font-weight: 100;
+  color: #092869;
+  padding-top: 5em;
+}
+
+
+/* HEADER */
+
+header {
+  background-color: #fff;
+  text-align: right;
+  left: 0;
+  width: 100%;
+  font-size: 1em;
+  line-height: 2em;
+    z-index: 1;
+}
+
+body>header ul li a {
+    color: #092869;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+body>header ul li {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body>header {
+  color: #092869;
+  box-shadow: 0px 0px 20px 0px rgba(46, 55, 60, 1);
+  position: fixed;
+}
+
+body>header ul li a:hover {
+    color: #FD9600;
+    transition:  0.5s;
+}
+
+.logo {
+    float: left;
+}
+
+
+/* FOOTER */
+
+body>footer {
+ border-top-style: solid;
+ border-top-color: #ccc;
+}
+
+body > footer ul li {
+    display: inline;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+body>footer a{
+  color: #092869;
+  text-decoration: none;
+
+}
+
+a { color: #005ca0;
+    font-weight: 400;
+
+}
+
+
+==========================================================================
+Mobile (min-width 320px)
+========================================================================== */
+@media only screen and (min-width: 25em) {
+    #verhaal {
+        background:url(zombie_mob.png) no-repeat;
+        height: 100em;
+
+
+
+    }
+}
+
+/*
+==========================================================================
+ TABLETS (min-width 768px)
+========================================================================== */
+@media only screen and (min-width: 48em) {
+     body {
+        background:url(zombie_tab.png) no-repeat;
+         height: 134em;
+    }
+}
+
+/*
+==========================================================================
+Desktop SCREENS (min-width 1140px)
+========================================================================== */
+@media only screen and (min-width: 71.25em) {
+    body {
+        background:url(zombie_dk.png) no-repeat;
+        height: 132em;
+
+
+    }
+}
