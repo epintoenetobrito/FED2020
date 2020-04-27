@@ -56,3 +56,14 @@ function changeImage6() {
   }
 }
 
+
+// FUNCTIE DIE FILTER DICHTKLAPT EN OPENKLAPT WANNEER JE DRUKT OP ZOEKEN
+
+function verbergFilter() {
+  var verberg = document.getElementById("containerfilter");
+  if (verberg.style.display === "none") {
+    verberg.style.display = "inline-block";
+  } else {
+    verberg.style.display = "none";
+  }
+}
