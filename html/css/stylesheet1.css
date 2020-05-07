@@ -100,25 +100,28 @@ body>header ul li a {
     padding: 1em;
 }
 
-.containerfilter{
+#containerfilter{
     width: 95%;
-    margin: auto;
-    padding-top: 1em;
+    margin: 1rem;
 }
+
+#containerfilter.dicht{
+  display: none;
+    }
 
 .filter > h1{
     font-weight: 100;
    padding-left: 0.34em;
 }
 
-.containerfilter > ul {
+#containerfilter > ul {
     list-style: none;
     padding: 0;
 }
 
 .dropdown{
     position: relative;
-
+    padding: 1.5em;
 }
 
 .dropdown a {
