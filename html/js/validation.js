@@ -56,14 +56,15 @@ function changeImage6() {
   }
 }
 
+// FUNCTIE DIE ERVOOR ZORGT DAT MENU DICHTKLAPT ALS JE OP ZOEKEN DRUKT.
 
-// FUNCTIE DIE FILTER DICHTKLAPT EN OPENKLAPT WANNEER JE DRUKT OP ZOEKEN
+var knop = document.querySelector(".knop");
+var element = document.querySelector("#containerfilter");
 
-function verbergFilter() {
-  var verberg = document.getElementById("containerfilter");
-  if (verberg.style.display === "none") {
-    verberg.style.display = "inline-block";
-  } else {
-    verberg.style.display = "none";
-  }
-}
+knop.addEventListener("click", function(e){
+e.preventDefault()
+element.classList.toggle("dicht");});
+
+
+
+
