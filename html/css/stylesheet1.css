@@ -103,10 +103,12 @@ body>header ul li a {
 #containerfilter{
     width: 95%;
     margin: 1rem;
+      display:block;
 }
 
 #containerfilter.dicht{
-  display: none;
+display: none;
+    animation-duration: 4s;
     }
 
 .filter > h1{
