@@ -103,12 +103,16 @@ body>header ul li a {
 #containerfilter{
     width: 95%;
     margin: 1rem;
-      display:block;
+    opacity: 1;
+    transition: 0.5s;
+    max-height: 800px;
+     overflow: hidden;
 }
 
 #containerfilter.dicht{
-display: none;
-    animation-duration: 4s;
+    max-height: 0;
+opacity: 1;
+      transition: 0.5s;
     }
 
 .filter > h1{
